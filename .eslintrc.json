@@ -8,14 +8,12 @@
     "plugin:@typescript-eslint/recommended",
     "airbnb",
     "airbnb-typescript",
-
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
     "plugin:import/typescript",
     "plugin:sonarjs/recommended",
     "plugin:security/recommended",
     "plugin:react-hooks/recommended",
-    "prettier-plugin-tailwindcss",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
@@ -27,12 +25,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "prettier-plugin-tailwindcss",
-    "prettier"
-  ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "ignorePatterns": ["/*.*"],
   "rules": {
     "import/extensions": [
