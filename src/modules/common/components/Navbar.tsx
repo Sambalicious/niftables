@@ -33,7 +33,7 @@ export function Navbar() {
             src="/assets/logo-white.png"
           />{" "}
         </Link>
-        <div className="flex  gap-6  items-center ">
+        <div className="flex  gap-20 items-center ">
           <div className="xl:flex hidden  gap-14  items-center ">
             {NAVBAR_ITEMS?.map(el => (
               <Link
