@@ -27,7 +27,12 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier-plugin-tailwindcss",
+    "prettier"
+  ],
   "ignorePatterns": ["/*.*"],
   "rules": {
     "import/extensions": [
