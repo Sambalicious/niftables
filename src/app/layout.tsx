@@ -1,3 +1,5 @@
+import { Footer } from "@/modules/common/components/Footer";
+import { HeroSection } from "@/modules/home/components/HeroSection";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -42,7 +44,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${satoshi.variable} ${monument.variable}`}>
+        <HeroSection />
         {children}
+        <Footer />
       </body>
     </html>
   );

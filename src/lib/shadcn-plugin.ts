@@ -32,17 +32,12 @@ export const shadcnPlugin = plugin(
         // custom themes
         "--dark-foreground": "255, 8%, 19%, 1",
         "--dark-light-foreground": "270, 25%, 98%, 1",
-        "--purple-foreground": "246, 91%, 61%, .1",
-        "--purple": "246, 91%, 61%, 1",
-        "--red-foreground": "12, 100%, 49%, 1",
-        "--red": "12, 100%, 49%, .1",
-        "--blue-foreground": "201, 100%, 50%, 1",
-        "--blue": "201, 100%, 50%, .1",
-        "--green-foreground": "170, 73%, 46%, 1",
-        "--green": "170, 73%, 46%, 0.1",
-        "--white": "270, 25%, 98%, 1",
-        "--gray": "260, 9%, 92%, 1",
-        "--yellow": "39, 100%, 73%, 1",
+
+        "--white": "0, 0%, 100%, 1",
+        "--black": "0, 0%, 0%, 1",
+        "--gray": "215, 22%, 9%, 1",
+        "--blue": "216, 100%, 62%, 1",
+        "--purple": "277, 100%, 57%, 1",
       },
       ".dark": {
         "--background": "0 0% 3.9%",
@@ -68,7 +63,7 @@ export const shadcnPlugin = plugin(
     });
     addBase({
       "*": { "@apply border-border": {} },
-      body: { "@apply bg-background text-foreground": {} },
+      body: { "@apply bg-black-100 text-foreground": {} },
     });
   },
   // 2. Extend the tailwindCSS theme
@@ -95,6 +90,9 @@ export const shadcnPlugin = plugin(
           primary: {
             DEFAULT: "hsla(var(--purple))",
             foreground: "hsla(var(--purple-foreground))",
+          },
+          purple: {
+            100: "hsla(var(--purple))",
           },
           blue: {
             DEFAULT: "hsla(var(--blue))",
@@ -130,18 +128,8 @@ export const shadcnPlugin = plugin(
           white: {
             100: "hsla(var(--white))",
           },
-          green: {
-            100: "hsla(var(--green-foreground))",
-          },
-          red: {
-            100: "hsla(var(--red-foreground))",
-          },
-          yellow: {
-            100: "hsla(var(--yellow))",
-          },
-
           black: {
-            100: "hsla(var(--dark-foreground))",
+            100: "hsla(var(--black))",
           },
         },
         borderRadius: {
